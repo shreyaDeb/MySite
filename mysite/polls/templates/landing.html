@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Landing Page</title>
+  <link rel="stylesheet" href="{% static "css/landing.css" %}">
+</head>
+<body>
+  <header>
+    <div class="polls">
+        <h1>Welcome To Polls</h1>
+    </div>
+  </header> 
+
+  <div class="container">
+    <div class="card">
+        <h1>Go To Polls List and Vote</h1>
+        <p>Polls app is a simple Django application for conducting online surveys and gathering user opinions. </p>
+        <a href="/index/">Find The Variety Of Polls</a>
+    </div>
+    <div class="card">
+        <h1>Instead Play Games</h1>
+        <p>Browse different game links</p>
+        <a href="/games/">Play Now</a>
+    </div>
+</div>
+
+</body>
+</html>

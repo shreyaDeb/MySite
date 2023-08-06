@@ -5,11 +5,17 @@ from django.urls import reverse
 from .models import Choice, Question
 # Create your views here.
 
+def landing(request):
+    return render(request, "landing.html")
+
+def games(request):
+    return render(request, "gaminglinks.html")
+
 def index(request):
     latest_question_list = Question.objects.order_by("-pub_date")[:5]
     context = {"latest_question_list": latest_question_list}
     return render(request, "index.html", context)
-    return HttpResponse("Landing page YOLO")
+    # return HttpResponse("Landing page YOLO")
     
 
 def detail(request, question_id):
